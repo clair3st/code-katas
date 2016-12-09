@@ -46,3 +46,16 @@ def remove_every_other(my_list):
     return [v for c,v in enumerate(my_list) if not c%2]
 ```
 
+
+### Removing elements
+**Module:** vowel_remover.py
+
+**Tests:** test_vowel_remover.py
+
+**URL:** [Removing vowels](https://www.codewars.com/kata/vowel-remover/train/python)
+
+**Most interesting solution**
+```
+def shortcut(s):
+    return s.translate(None, 'aeiou')
+```
