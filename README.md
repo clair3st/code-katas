@@ -21,6 +21,7 @@ def even_or_odd(number):
 **Tests:** test_max_min.py
 
 **URL:** [Min and Max](https://www.codewars.com/kata/find-maximum-and-minimum-values-of-a-list)
+
 **Most interesting solution**
 ```
 import math
