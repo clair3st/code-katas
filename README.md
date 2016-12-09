@@ -59,3 +59,17 @@ def remove_every_other(my_list):
 def shortcut(s):
     return s.translate(None, 'aeiou')
 ```
+
+
+### Summation
+**Module:** summation.py
+
+**Tests:** test_summation.py
+
+**URL:** [Summation](https://www.codewars.com/kata/grasshopper-summation/train/python)
+
+**Most interesting solution**
+```
+def summation(num):
+    return sum(xrange(num + 1))
+```
