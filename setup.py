@@ -12,12 +12,7 @@ setup(
     license="MIT",
     package_dir={'': 'src'},
     py_modules=[""],
-    install_requires=['numpy'],
     extras_require={
         "test": ["pytest", "pytest-watch", "pytest-cov", "tox"]
     },
-    entry_points={
-        "console_scripts": [
-            "ackermann = ackermann:print_something"]
-    }
 )
