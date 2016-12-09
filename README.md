@@ -198,3 +198,15 @@ def count_by(x, n):
 def string_to_array(string=''):
     return string.split() if string else ['']
 ```
+
+### Remove first and Last Character
+**Module:** first_last.py
+
+**Tests:** test_first_last.py
+
+**URL:** [Reomve first and Last](https://www.codewars.com/kata/remove-first-and-last-character/train/python)
+
+**Most interesting solution**
+```
+remove_char=lambda s: s[1:-1]
+```
