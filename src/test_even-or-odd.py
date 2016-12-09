@@ -1,7 +1,17 @@
 """Test even or odd function."""
 
+import pytest
 
-test.expect(even_or_odd(2) == "Even")
-test.expect(even_or_odd(0) == "Even")
-test.expect(even_or_odd(7) == "Odd")
-test.expect(even_or_odd(1) == "Odd")
+NUMBERS = [
+    [2, 'Even'],
+    [0, 'Even'],
+    [7, 'Odd'],
+    [1, 'Odd'],
+]
+
+
+@pytest.mark.parametrize("n, result", NUMBERS)
+def test_even_or_odd(n, result):
+    """Test fibonacci for some value of n."""
+    from evenorodd import even_or_odd
+    assert even_or_odd(n) == result
