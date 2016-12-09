@@ -101,3 +101,17 @@ def digitize(n):
 def powers_of_two(n):
     return [1 << x for x in range(n + 1)]
 ```
+
+
+### Double Character in a String
+**Module:** double_char.py
+
+**Tests:** test_double_char.py
+
+**URL:** [Double Char](https://www.codewars.com/kata/double-char/train/python)
+
+**Most interesting solution**
+```
+def double_char(s):
+    return ''.join(c * 2 for c in s)
+```
