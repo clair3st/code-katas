@@ -156,3 +156,19 @@ def greet(name):
 def make_negative( number ):
     return -abs(number)
 ```
+
+### Needle in a Haystack
+**Module:** needle.py
+
+**Tests:** test_needle.py
+
+**URL:** [Needle in Haystack](https://www.codewars.com/kata/a-needle-in-the-haystack/train/python)
+
+**Most interesting solution**
+```
+def find_needle(haystack):
+    found = 'found the needle at position '
+    needle = 'needle'
+    found += str(haystack.index(needle))
+    return found
+```
