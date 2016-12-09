@@ -73,3 +73,17 @@ def shortcut(s):
 def summation(num):
     return sum(xrange(num + 1))
 ```
+
+
+### Powers of Two
+**Module:** powers_of_two.py
+
+**Tests:** test_powers_of_two.py
+
+**URL:** [Powers of two](https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/python)
+
+**Most interesting solution**
+```
+def powers_of_two(n):
+    return [1<<x for x in range(n + 1)]
+```
