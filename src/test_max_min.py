@@ -23,12 +23,12 @@ MAX_NUMBERS = [
 @pytest.mark.parametrize("n, result", MIN_NUMBERS)
 def test_min(n, result):
     """Test min for some value of n."""
-    from max_min import min_cw
+    from ../src/max_min import min_cw
     assert min_cw(n) == result
 
 
 @pytest.mark.parametrize("n, result", MAX_NUMBERS)
 def test_max(n, result):
     """Test max for some value of n."""
-    from max_min import max_cw
+    from ../src/max_min import max_cw
     assert max_cw(n) == result
