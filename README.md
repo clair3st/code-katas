@@ -129,3 +129,17 @@ def double_char(s):
 def opposite(number):
     return -number
 ```
+
+
+### Debug Jenny's greeting
+**Module:** jenny_greet.py
+
+**Tests:** test_jenny_greet.py
+
+**URL:** [Jenny's greeting](https://www.codewars.com/kata/jennys-secret-message/train/python)
+
+**Most interesting solution**
+```
+def greet(name):
+    return "Hello, {name}!".format(name = ('my love' if name == 'Johnny' else name));
+```
