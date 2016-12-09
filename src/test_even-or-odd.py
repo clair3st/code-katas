@@ -12,6 +12,6 @@ NUMBERS = [
 
 @pytest.mark.parametrize("n, result", NUMBERS)
 def test_even_or_odd(n, result):
-    """Test fibonacci for some value of n."""
+    """Test even or odd for some value of n."""
     from evenorodd import even_or_odd
     assert even_or_odd(n) == result
