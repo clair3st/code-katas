@@ -185,3 +185,16 @@ def find_needle(haystack):
 def count_by(x, n):
     return range(x, x * n + 1, x)
 ```
+
+### String to list
+**Module:** string_to_list.py
+
+**Tests:** test_string_to_list.py
+
+**URL:** [String to List](https://www.codewars.com/kata/convert-a-string-to-an-array/train/python)
+
+**Most interesting solution**
+```
+def string_to_array(string=''):
+    return string.split() if string else ['']
+```
