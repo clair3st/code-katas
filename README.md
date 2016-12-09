@@ -31,3 +31,18 @@ def min(arr):
 def max(arr):
     return (sorted(arr))[len(arr)-1]
 ```
+
+
+### Removing elements
+**Module:** removing_elements.py
+
+**Tests:** test_removing elements.py
+
+**URL:** [Removing elements](https://www.codewars.com/kata/removing-elements/python)
+
+**Most interesting solution**
+```
+def remove_every_other(my_list):
+    return [v for c,v in enumerate(my_list) if not c%2]
+```
+
