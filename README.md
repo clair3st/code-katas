@@ -172,3 +172,16 @@ def find_needle(haystack):
     found += str(haystack.index(needle))
     return found
 ```
+
+### Count by X
+**Module:** count_by_x.py
+
+**Tests:** test_count_by_x.py
+
+**URL:** [Count by X](https://www.codewars.com/kata/count-by-x/train/python)
+
+**Most interesting solution**
+```
+def count_by(x, n):
+    return range(x, x * n + 1, x)
+```
