@@ -115,3 +115,17 @@ def powers_of_two(n):
 def double_char(s):
     return ''.join(c * 2 for c in s)
 ```
+
+
+### Opposite Number
+**Module:** opposite_number.py
+
+**Tests:** test_opposite_number.py
+
+**URL:** [opposite](https://www.codewars.com/kata/opposite-number/train/python)
+
+**Most interesting solution**
+```
+def opposite(number):
+    return -number
+```
