@@ -210,3 +210,16 @@ def string_to_array(string=''):
 ```
 remove_char=lambda s: s[1:-1]
 ```
+
+### Square and Sum
+**Module:** square_sum.py
+
+**Tests:** test_square_sum.py
+
+**URL:** [Square and Sum](https://www.codewars.com/kata/square-n-sum/train/python)
+
+**Most interesting solution**
+```
+def square_sum(numbers):
+    return sum(x ** 2 for x in numbers)
+```
