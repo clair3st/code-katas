@@ -75,6 +75,20 @@ def summation(num):
 ```
 
 
+### Reverse array of an integer
+**Module:** reverse_array.py
+
+**Tests:** test_reverse_array.py
+
+**URL:** [Digitize](https://www.codewars.com/kata/convert-number-to-reversed-array-of-digits/train/python)
+
+**Most interesting solution**
+```
+def digitize(n):
+    return map(int, str(n)[::-1])
+```
+
+
 ### Powers of Two
 **Module:** powers_of_two.py
 
@@ -85,5 +99,5 @@ def summation(num):
 **Most interesting solution**
 ```
 def powers_of_two(n):
-    return [1<<x for x in range(n + 1)]
+    return [1 << x for x in range(n + 1)]
 ```
