@@ -143,3 +143,16 @@ def opposite(number):
 def greet(name):
     return "Hello, {name}!".format(name = ('my love' if name == 'Johnny' else name));
 ```
+
+### Make negative
+**Module:** make_negative.py
+
+**Tests:** make_negative.py
+
+**URL:** [Make negative](https://www.codewars.com/kata/return-negative/train/python)
+
+**Most interesting solution**
+```
+def make_negative( number ):
+    return -abs(number)
+```
