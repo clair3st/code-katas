@@ -3,11 +3,31 @@ Collection of Python katas completed during Codefellows 401.
 
 ### Even or Odd
 **Module:** evenorodd.py
-**Tests:** test_even-or-odd.p
+
+**Tests:** test_even-or-odd.py
+
 **URL:** [Even or Odd](https://www.cyodewars.com/kata/53da3dbb4a5168369a0000fe/train/python)
 
 **Most interesting solution**
 ```
 def even_or_odd(number):
   return ["Even", "Odd"][number % 2]
+```
+
+
+### Max and min in a list
+**Module:** max_min.py
+
+**Tests:** test_max_min.py
+
+**URL:** [Min and Max](https://www.codewars.com/kata/find-maximum-and-minimum-values-of-a-list)
+**Most interesting solution**
+```
+import math
+
+def min(arr):
+    return (sorted(arr))[0]
+
+def max(arr):
+    return (sorted(arr))[len(arr)-1]
 ```
