@@ -6,7 +6,7 @@ Collection of Python katas completed during Codefellows 401.
 
 **Tests:** test_even-or-odd.py
 
-**URL:** [Even or Odd](https://www.cyodewars.com/kata/53da3dbb4a5168369a0000fe/train/python)
+**URL:** [Even or Odd](https://www.codewars.com/kata/even-or-odd)
 
 **Most interesting solution**
 ```
