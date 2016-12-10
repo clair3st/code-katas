@@ -1,6 +1,22 @@
 # code-katas
 Collection of Python katas completed during Codefellows 401.
 
+### Sum Series
+**Module:** sum_series.py
+
+**Tests:** test_sum_series.py
+
+**URL:** [Sum Series](http://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/python)
+
+**Most interesting solution**
+```
+def series_sum(n):
+    sum = 0.0
+    for i in range(0,n):
+        sum += 1 / (1 + 3 * float(i))
+    return '%.2f' % sum
+```
+
 ### Even or Odd
 **Module:** evenorodd.py
 
