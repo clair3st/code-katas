@@ -1,6 +1,7 @@
 # code-katas
 Collection of Python katas completed during Codefellows 401.
 
+
 ### Sum Series
 **Module:** sum_series.py
 
