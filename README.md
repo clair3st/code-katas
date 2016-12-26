@@ -1,6 +1,19 @@
 # code-katas
 Collection of Python katas completed during Codefellows 401.
 
+#### Sort Deck of cards
+- *Module:* sort_cards.py
+
+- *Tests:* test_sort_cards.py
+
+- *URL:* [Sort Cards](https://www.codewars.com/kata/sort-deck-of-cards/python)
+
+- *Most interesting solution*
+```Python
+def sort_cards(cards):
+    return sorted(cards, key="A23456789TJQK".index)
+```
+
 
 ####Proper Parenthetics
 - *Module:* proper_parenthetics.py
