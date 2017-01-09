@@ -1,6 +1,8 @@
 """Find the distance between two cities."""
 import requests
 from weighted_graph import Graph
+import sys
+import json
 
 
 def calculate_distance(point1, point2):
@@ -28,16 +30,26 @@ def calculate_distance(point1, point2):
     return radius_earth * c / 1.60934  # convert km to miles
 
 
-def get_data_from_json():
-    """Extract information from json file to a list of dictionaries."""
+def get_data_from_json_url():
+    """Extract information from json url."""
     url = 'https://codefellows.github.io/sea-python-401d5/_downloads/cities_with_airports.json'
     response = requests.get(url)
-    data_json = response.json()
+    return response.json()
 
+
+def get_data_from_json_file():
+    """Extract information from json file."""
+    with open('cities_with_airports.json') as data_as_json:
+            data = json.load(data_as_json)
+    return data
+
+
+def parse_data_into_required_format(data):
+    """Take data of airports and format into dictionary."""
     airport_data = {airport['city']: {
         'connections': airport['destination_cities'],
         'lat_lon': airport['lat_lon']
-    } for airport in data_json}
+    } for airport in data}
 
     return airport_data
 
@@ -61,13 +73,27 @@ def make_airport_graph(airport_data):
     return world_map
 
 
-def return_shortest_route(start, destination):
+def return_shortest_route(graph, start, destination):
     """Return the shortest routes between two cities."""
-    graph = make_airport_graph(get_data_from_json())
-    print(graph.graph['Sydney'])
-    return graph.dijkstra(start, destination)
+    result = graph.dijkstra(start, destination)
+    if result is None:
+        raise KeyError('No such journey possible')
+    return result
 
 
 if __name__ == "__main__":
-    print(return_shortest_route('Sydney', 'London'))
-    print(return_shortest_route('Sydney', 'Newark'))
+    if len(sys.argv) > 1 and sys.argv[1] == 'test':
+        graph = make_airport_graph(
+            parse_data_into_required_format(
+                get_data_from_json_file()
+            )
+        )
+    else:
+        graph = make_airport_graph(
+            parse_data_into_required_format(
+                get_data_from_json_url()
+            )
+        )
+
+    print(return_shortest_route(graph, 'Sydney', 'London'))
+    print(return_shortest_route(graph, 'Sydney', 'Canberra'))
