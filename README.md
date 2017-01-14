@@ -1,7 +1,7 @@
 # code-katas
 Collection of Python katas completed during Codefellows 401.
 
-#### Sort Deck of cards
+#### Flight Path
 - *Module:* flight_path.py
 
 - *Tests:* test_flight_path.py
