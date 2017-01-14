@@ -46,12 +46,10 @@ def get_data_from_json_file():
 
 def parse_data_into_required_format(data):
     """Take data of airports and format into dictionary."""
-    airport_data = {airport['city']: {
+    return {airport['city']: {
         'connections': airport['destination_cities'],
         'lat_lon': airport['lat_lon']
     } for airport in data}
-
-    return airport_data
 
 
 def make_airport_graph(airport_data):
@@ -96,4 +94,4 @@ if __name__ == "__main__":
         )
 
     print(return_shortest_route(graph, 'Sydney', 'London'))
-    print(return_shortest_route(graph, 'Sydney', 'Canberra'))
+    print(return_shortest_route(graph, 'Sydney', 'Seattle'))
