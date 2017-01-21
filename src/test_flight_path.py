@@ -14,11 +14,11 @@ def flight_graph():
     return graph
 
 
-def test_get_data_from_url_returns_list():
-    """Test data from json url is in a list with length."""
-    from flight_path import get_data_from_json_url
-    data = get_data_from_json_url()
-    assert len(data) == 741
+# def test_get_data_from_url_returns_list():
+#     """Test data from json url is in a list with length."""
+#     from flight_path import get_data_from_json_url
+#     data = get_data_from_json_url()
+#     assert len(data) == 741
 
 
 # def test_get_data_from_file_returns_list():
