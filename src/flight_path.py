@@ -37,9 +37,9 @@ def get_data_from_json_url():
     return response.json()
 
 
-def get_data_from_json_file():
+def get_data_from_json_file(file):
     """Extract information from json file."""
-    with open('cities_with_airports.json') as data_as_json:
+    with open(file) as data_as_json:
             data = json.load(data_as_json)
     return data
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == 'test':
         graph = make_airport_graph(
             parse_data_into_required_format(
-                get_data_from_json_file()
+                get_data_from_json_file('cities_with_airports.json')
             )
         )
     else:
