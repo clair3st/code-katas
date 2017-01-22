@@ -2,6 +2,13 @@
 Collection of Python katas completed during Codefellows 401.
 
 #### Flight Path
+- *Module:* forbes.py
+
+- *Tests:* test_forbes.py
+
+- *URL:* [The Forbes top 40](https://codefellows.github.io/sea-python-401d5/assignments/kata_forbes_billionaires.html)
+
+#### Flight Path
 - *Module:* flight_path.py
 
 - *Tests:* test_flight_path.py
