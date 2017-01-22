@@ -1,6 +1,14 @@
 # code-katas
 Collection of Python katas completed during Codefellows 401.
 
+#### Flight Path
+- *Module:* flight_path.py
+
+- *Tests:* test_flight_path.py
+
+- *URL:* [Flight Paths](https://codefellows.github.io/sea-python-401d5/assignments/kata_flight_paths.html)
+
+
 #### Sort Deck of cards
 - *Module:* sort_cards.py
 
