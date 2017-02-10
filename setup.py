@@ -13,6 +13,6 @@ setup(
     package_dir={'': 'src'},
     install_requires=['requests'],
     extras_require={
-        "test": ["pytest", "pytest-watch", "pytest-cov", "tox"]
+        "test": ["pytest", "pytest-watch", "pytest-cov", "tox", "requests"]
     },
 )
