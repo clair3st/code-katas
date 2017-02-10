@@ -62,7 +62,7 @@ def test_flight_path_shortest_path_no_connections(flight_graph):
 
     trip = return_shortest_route(flight_graph, 'Sydney', 'London')
 
-    assert trip == (10536.109189807652, ['Sydney', 'London'])
+    assert trip == (10536.109189807654, ['Sydney', 'London'])
 
 
 def test_flight_path_shortest_path_connections(flight_graph):
