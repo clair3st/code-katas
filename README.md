@@ -29,6 +29,12 @@ def count_visible_characters_of_the_pyramid(characters):
 def count_all_characters_of_the_pyramid(characters):
     return -1 if not characters else sum( (2*i+1)**2 for i in range(len(characters)) )
 ```
+#### Flight Path
+- *Module:* flight_path.py
+
+- *Tests:* test_flight_path.py
+
+- *URL:* [Flight Paths](https://codefellows.github.io/sea-python-401d5/assignments/kata_flight_paths.html)
 
 #### Sort Deck of cards
 - *Module:* sort_cards.py
@@ -44,7 +50,7 @@ def sort_cards(cards):
 ```
 
 
-####Proper Parenthetics
+#### Proper Parenthetics
 - *Module:* proper_parenthetics.py
 
 - *Tests:* test_parenthetics
