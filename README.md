@@ -1,6 +1,13 @@
 # code-katas
 Collection of Python katas completed during Codefellows 401.
 
+#### Disemvowel Trolls
+- *Module:* disemvowel.py
+
+- *Tests:* test_disemvowel.py
+
+- *URL:* [Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python)
+
 #### Flight Path
 - *Module:* forbes.py
 
