@@ -11,8 +11,8 @@ setup(
     author_email="clairejgatenby@gmail.com",
     license="MIT",
     package_dir={'': 'src'},
-    packages=["requests"],
+    install_requires=['requests'],
     extras_require={
-        "test": ["pytest", "pytest-watch", "pytest-cov", "tox"]
+        "test": ["pytest", "pytest-watch", "pytest-cov", "tox", "requests"]
     },
 )

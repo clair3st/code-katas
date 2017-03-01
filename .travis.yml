@@ -6,14 +6,14 @@ python:
 # command to install dependencies
 install:
   - pip install -e .[test]
-  # - pip install coveralls
+  - pip install coveralls
 
 # command to run tests
 script: 
   - py.test src --cov=src --cov-report term-missing
 
 after_success:
-  # - coveralls
+  - coveralls
 
 notifications:
   email: false

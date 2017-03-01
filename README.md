@@ -30,6 +30,30 @@ def count_all_characters_of_the_pyramid(characters):
     return -1 if not characters else sum( (2*i+1)**2 for i in range(len(characters)) )
 ```
 
+
+#### Disemvowel Trolls
+- *Module:* disemvowel.py
+
+- *Tests:* test_disemvowel.py
+
+- *URL:* [Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python)
+
+
+#### Flight Path
+- *Module:* forbes.py
+
+- *Tests:* test_forbes.py
+
+- *URL:* [The Forbes top 40](https://codefellows.github.io/sea-python-401d5/assignments/kata_forbes_billionaires.html)
+
+
+#### Flight Path
+- *Module:* flight_path.py
+
+- *Tests:* test_flight_path.py
+
+- *URL:* [Flight Paths](https://codefellows.github.io/sea-python-401d5/assignments/kata_flight_paths.html)
+
 #### Sort Deck of cards
 - *Module:* sort_cards.py
 
