@@ -68,7 +68,7 @@ def sort_cards(cards):
 ```
 
 
-####Proper Parenthetics
+#### Proper Parenthetics
 - *Module:* proper_parenthetics.py
 
 - *Tests:* test_parenthetics
