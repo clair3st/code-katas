@@ -1,12 +1,43 @@
 # code-katas
 Collection of Python katas completed during Codefellows 401.
 
+#### String Pyramid
+- *Module:* string_pyramid.py
+
+- *Tests:* test_string_pyramid.py
+
+- *URL:* [String Pyramid](http://www.codewars.com/kata/string-pyramid/python)
+
+- *Most interesting solution*
+```Python
+def watch_pyramid_from_the_side(characters):
+    if not characters : return characters
+    baseLen = len(characters)*2-1
+    return '\n'.join( ' '*(i) + characters[i]*(baseLen-2*i) + ' '*(i) for i in range(len(characters)-1,-1,-1) )
+
+
+def watch_pyramid_from_above(characters):
+    if not characters : return characters
+    baseLen = len(characters)*2-1
+    return '\n'.join( characters[0:min(i,baseLen-1-i)] + characters[min(i,baseLen-1-i)]*(baseLen-2*min(i,baseLen-1-i)) + characters[0:min(i,baseLen-1-i)][::-1] for i in range(baseLen) )
+
+
+def count_visible_characters_of_the_pyramid(characters):
+    return -1 if not characters else (len(characters)*2-1)**2
+
+
+def count_all_characters_of_the_pyramid(characters):
+    return -1 if not characters else sum( (2*i+1)**2 for i in range(len(characters)) )
+```
+
+
 #### Disemvowel Trolls
 - *Module:* disemvowel.py
 
 - *Tests:* test_disemvowel.py
 
 - *URL:* [Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python)
+
 
 #### Flight Path
 - *Module:* forbes.py
@@ -15,13 +46,13 @@ Collection of Python katas completed during Codefellows 401.
 
 - *URL:* [The Forbes top 40](https://codefellows.github.io/sea-python-401d5/assignments/kata_forbes_billionaires.html)
 
+
 #### Flight Path
 - *Module:* flight_path.py
 
 - *Tests:* test_flight_path.py
 
 - *URL:* [Flight Paths](https://codefellows.github.io/sea-python-401d5/assignments/kata_flight_paths.html)
-
 
 #### Sort Deck of cards
 - *Module:* sort_cards.py
@@ -37,7 +68,7 @@ def sort_cards(cards):
 ```
 
 
-####Proper Parenthetics
+#### Proper Parenthetics
 - *Module:* proper_parenthetics.py
 
 - *Tests:* test_parenthetics
