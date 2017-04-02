@@ -77,8 +77,12 @@ class Graph(object):
         """Add an edge between node1 and node2."""
         self.graph.setdefault(node1, [])
         self.graph.setdefault(node2, [])
-        if node2 not in self.graph[node1]:
-            self.graph[node1].append((node2, weight))
+        try:
+            int(weight)
+            if node2 not in self.graph[node1]:
+                self.graph[node1].append((node2, weight))
+        except ValueError:
+            raise ValueError('Weight of an edge must be a number.')
 
     def del_node(self, node_delete):
         """Delete the inputted node from the graph."""
@@ -111,29 +115,6 @@ class Graph(object):
         if node1 not in self.graph or node2 not in self.graph:
             raise KeyError('One or both of these nodes is not in the graph.')
         return node2 in [edge[0] for edge in self.graph[node1]]
-
-    def depth_traversal(self, root, visited=None):
-        """Perform depth traversal of graph."""
-        if visited is None:
-            visited = []
-        visited.append(root)
-        for edge in self.graph[root]:
-            if edge[0] not in visited:
-                self.depth_traversal(edge[0], visited)
-        return visited
-
-    def breadth_traversal(self, root):
-        """Perform breath traversal of graph."""
-        visited = [root]
-        node_edges = self.graph[root]
-        while node_edges:
-            edge = node_edges.pop(0)
-            if edge[0] not in visited:
-                visited.append(edge[0])
-                unique_edges = [edge[0] for edge in self.graph[edge]
-                                if edge[0] not in visited]
-                node_edges.extend(unique_edges)
-        return visited
 
     def dijkstra(self, source, target):
         """Find the shorted path from source node to all other nodes."""
@@ -176,23 +157,3 @@ class Graph(object):
             ret_path.append(path[cur_node])
             cur_node = path[cur_node]
         return ret_path[::-1]
-
-
-if __name__ == '__main__':
-    import timeit
-    graph = Graph(['A', 'B', 'C', 'D', 'E', 'F', 'G'])
-    graph.add_edge('A', 'B')
-    graph.add_edge('A', 'C')
-    graph.add_edge('A', 'E')
-    graph.add_edge('B', 'D')
-    graph.add_edge('B', 'F')
-    graph.add_edge('C', 'G')
-    graph.add_edge('E', 'F')
-    print('Depth Traversal Time for 1000 traversals:',
-          timeit.timeit(stmt="graph.depth_traversal('A')",
-                        setup='from __main__ import graph',
-                        number=1000))
-    print('Breadth Traversal Time for 1000 traversals:',
-          timeit.timeit(stmt="graph.breadth_traversal('A')",
-                        setup='from __main__ import graph',
-                        number=1000))
