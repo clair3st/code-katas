@@ -1,6 +1,22 @@
 # code-katas [![Build Status](https://travis-ci.org/clair3st/code-katas.svg?branch=master)](https://travis-ci.org/clair3st/code-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/code-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/code-katas?branch=master)
 Collection of Python katas completed during Codefellows 401.
 
+#### String Incrementer
+- *Module:* string_incrementer.py
+
+- *Tests:* test_string_incrementer.py
+
+- *URL:* [String Incrementer](https://www.codewars.com/kata/string-incrementer/python)
+
+- *Most interesting solution*
+```Python
+def increment_string(strng):
+    head = strng.rstrip('0123456789')
+    tail = strng[len(head):]
+    if tail == "": return strng+"1"
+    return head + str(int(tail) + 1).zfill(len(tail))
+```
+
 #### String Pyramid
 - *Module:* string_pyramid.py
 
