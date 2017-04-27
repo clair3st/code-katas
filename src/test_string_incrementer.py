@@ -14,7 +14,7 @@ STRINGS = [
 
 
 @pytest.mark.parametrize("n, result", STRINGS)
-def test_sum_square(n, result):
+def test_string_incrementer(n, result):
     """Test the string incrementer."""
     from string_incrementer import increment_string
     assert increment_string(n) == result
