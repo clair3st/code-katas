@@ -1,6 +1,29 @@
 # code-katas [![Build Status](https://travis-ci.org/clair3st/code-katas.svg?branch=master)](https://travis-ci.org/clair3st/code-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/code-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/code-katas?branch=master)
 Collection of Python katas completed during Codefellows 401.
 
+#### Regex Password Validator
+Level 5
+- *Module:* regex_password.py
+
+- *Tests:* test_regex_password.py
+
+- *URL:* [Regex Password Validator](https://www.codewars.com/kata/regex-password-validation/python)
+
+- *Most interesting solution*
+```Python
+from re import compile, VERBOSE
+
+regex = compile("""
+^              # begin word
+(?=.*?[a-z])   # at least one lowercase letter
+(?=.*?[A-Z])   # at least one uppercase letter
+(?=.*?[0-9])   # at least one number
+[A-Za-z\d]     # only alphanumeric
+{6,}           # at least 6 characters long
+$              # end word
+""", VERBOSE)
+```
+
 #### String Incrementer
 - *Module:* string_incrementer.py
 
