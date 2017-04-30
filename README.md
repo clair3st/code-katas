@@ -1,6 +1,20 @@
 # code-katas [![Build Status](https://travis-ci.org/clair3st/code-katas.svg?branch=master)](https://travis-ci.org/clair3st/code-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/code-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/code-katas?branch=master)
 Collection of Python katas completed during Codefellows 401.
 
+#### Array.Diff
+Level6
+- *Module:* (src/array_diff.py)
+
+- *Tests:* (src/test_array_diff.py)
+
+- *URL:* [Array.Diff](https://www.codewars.com/kata/array-dot-diff/python)
+
+- *Most interesting solution*
+```Python
+def array_diff(a, b):
+    return [x for x in a if x not in set(b)]
+```
+
 #### Longest Palindrome
 Level 6
 - *Module:* longest_palindrome.py
