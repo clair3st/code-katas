@@ -3,7 +3,7 @@ Collection of Python katas completed during Codefellows 401.
 
 #### Longest Palindrome
 Level 6
-- *Module:* longest_palidrome.py
+- *Module:* longest_palindrome.py
 
 - *Tests:* test_longest_palindrome.py
 
