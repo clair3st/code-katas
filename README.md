@@ -1,6 +1,23 @@
 # code-katas [![Build Status](https://travis-ci.org/clair3st/code-katas.svg?branch=master)](https://travis-ci.org/clair3st/code-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/code-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/code-katas?branch=master)
 Collection of Python katas completed during Codefellows 401.
 
+#### Longest Palindrome
+Level 6
+- *Module:* longest_palidrome.py
+
+- *Tests:* test_longest_palindrome.py
+
+- *URL:* [Longest Palindrome](https://www.codewars.com/kata/longest-palindrome/python)
+
+- *Most interesting solution*
+```Python
+def longest_palindrome(s):
+    for c in xrange(len(s), -1, -1):
+        for i in xrange(len(s) - c + 1):
+            if s[i:i + c] == s[i:i + c][::-1]:
+                return c
+```
+
 #### Regex Password Validator
 Level 5
 - *Module:* regex_password.py
