@@ -1,6 +1,15 @@
 # code-katas [![Build Status](https://travis-ci.org/clair3st/code-katas.svg?branch=master)](https://travis-ci.org/clair3st/code-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/code-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/code-katas?branch=master)
 Collection of Python katas completed during Codefellows 401.
 
+#### Multi-tap Keypad Text Entry on an Old Mobile Phone
+Level 6 
+- *Module:* phone_touch.py
+
+- *Tests:* test_katas.py
+
+- *URL:* [Phone Touch](https://www.codewars.com/kata/multi-tap-keypad-text-entry-on-an-old-mobile-phone/python)
+
+
 #### Longest Palindrome
 Level 6
 - *Module:* longest_palindrome.py
