@@ -27,7 +27,7 @@ def youngest_and_oldest_under_eighty():
     return min_age, max_age
 
 
-def display_result(ages):
+def display_result(ages):  # pragma: no cover
     """Display oldes and youngest."""
     print("""Youngest Billionare:
     {name}, {age} years old, with net worth of ${net_worth (USD)} from {source}""".format(**ages[0]))
@@ -35,5 +35,5 @@ def display_result(ages):
     {name}, {age} years old, with net worth of ${net_worth (USD)} from {source}""".format(**ages[1]))
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':   # pragma: no cover
     display_result(youngest_and_oldest_under_eighty())
