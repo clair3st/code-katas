@@ -30,7 +30,7 @@ def calculate_distance(point1, point2):
     return radius_earth * c / 1.60934  # convert km to miles
 
 
-def get_data_from_json_url():
+def get_data_from_json_url():   # pragma: no cover
     """Extract information from json url."""
     url = 'https://codefellows.github.io/sea-python-401d5/_downloads/cities_with_airports.json'
     response = requests.get(url)
@@ -79,7 +79,7 @@ def return_shortest_route(graph, start, destination):
     return result
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     if len(sys.argv) > 1 and sys.argv[1] == 'test':
         graph = make_airport_graph(
             parse_data_into_required_format(
