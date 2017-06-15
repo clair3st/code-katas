@@ -89,6 +89,16 @@ def test_search():
     assert linked_list.search('2').data == '2'
 
 
+def test_search_no_val():
+    """Test search method if finds a value in linked list."""
+    from linked_list import LinkedList
+    linked_list = LinkedList()
+    linked_list.push('1')
+    linked_list.push('2')
+    linked_list.push('3')
+    assert linked_list.search('5') is None
+
+
 def test_remove_tail():
     """Test if remove method removes last node from linked list."""
     from linked_list import LinkedList
