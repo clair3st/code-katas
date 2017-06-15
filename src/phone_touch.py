@@ -1,7 +1,7 @@
 """Module for many katas."""
 
 
-def presses(phrase):
+def presses(phrase):  # pragma: no cover
     """Given an old phone, how many touches for a given phrase."""
     key_pad = {'1ADGJMPTW ': 1, 'BEHKNQUX0': 2, 'CFILORVY': 3,
                'SZ234568': 4, '79': 5}
