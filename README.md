@@ -2,6 +2,25 @@
 Collection of Python katas completed during Codefellows 401.
 
 
+#### Sum of Pairs
+Level5
+- *Module:* (src/sum_pairs.py)
+
+- *Tests:* (src/test_katas.py)
+
+- *URL:* [Sum of Pairs](https://www.codewars.com/kata/sum-of-pairs/python)
+
+- *Most interesting solution*
+```Python
+def sum_pairs(lst, s):
+    cache = set()
+    for i in lst:
+        if s - i in cache:
+            return [s - i, i]
+        cache.add(i)
+```
+
+
 #### Multi-tap Keypad Text Entry on an Old Mobile Phone
 Level 6 
 - *Module:* phone_touch.py
