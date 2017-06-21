@@ -1,6 +1,24 @@
 # code-katas [![Build Status](https://travis-ci.org/clair3st/code-katas.svg?branch=master)](https://travis-ci.org/clair3st/code-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/code-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/code-katas?branch=master)
 Collection of Python katas completed during Codefellows 401.
 
+#### Find the unique String
+Level 5
+
+- *Module:* (src/katas.py)
+
+- *Function:* `find_uniq(arr)`
+
+- *Tests:* (src/test_katas.py)
+
+- *URL:* [Find Unique String](https://www.codewars.com/kata/find-the-unique-string/train/python)
+
+- *Most interesting solution*
+```Python
+def find_uniq(arr):
+    arr.sort(key=lambda x: x.lower())
+    arr1 = [set(i.lower()) for i in arr]
+    return arr[0] if arr1.count(arr1[0]) == 1 and str(arr1[0]) != 'set()' else arr[-1]
+```
 
 #### Sum of Pairs
 Level5
