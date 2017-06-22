@@ -8,7 +8,7 @@ Level 5
 
 - *Function:* `find_uniq(arr)`
 
-- *Tests:* (src/test_katas.py)
+- *Tests:* (tests/test_katas.py)
 
 - *URL:* [Find Unique String](https://www.codewars.com/kata/find-the-unique-string/train/python)
 
@@ -24,7 +24,7 @@ def find_uniq(arr):
 Level5
 - *Module:* (src/sum_pairs.py)
 
-- *Tests:* (src/test_katas.py)
+- *Tests:* (tests/test_katas.py)
 
 - *URL:* [Sum of Pairs](https://www.codewars.com/kata/sum-of-pairs/python)
 
@@ -52,7 +52,7 @@ Level 6
 Level6
 - *Module:* (src/array_diff.py)
 
-- *Tests:* (src/test_array_diff.py)
+- *Tests:* (tests/test_array_diff.py)
 
 - *URL:* [Array.Diff](https://www.codewars.com/kata/array-dot-diff/python)
 
