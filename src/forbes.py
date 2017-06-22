@@ -1,6 +1,6 @@
 """Forbes 40 billionaires list."""
 
-from flight_path import get_data_from_json_file
+from src.flight_path import get_data_from_json_file
 
 
 def youngest_and_oldest_under_eighty():
@@ -8,7 +8,7 @@ def youngest_and_oldest_under_eighty():
 
     Challenge, not using sort function.
     """
-    data = get_data_from_json_file('rich-ppl.json')
+    data = get_data_from_json_file('src/rich-ppl.json')
 
     min_age = {'age': 100}
     max_age = {'age': 20}

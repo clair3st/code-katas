@@ -1,6 +1,6 @@
 """Check if a string of parens is balanced, open or brokend."""
 
-from stack import Stack
+from src.stack import Stack
 
 
 def proper_parens(str):
