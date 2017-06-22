@@ -25,6 +25,12 @@ PARAMS_SUM_PAIRS = [([1, 4, 8, 7, 3, 15], 8, [1, 7]),
                     ]
 
 
+PARAMS_UNIQ = [
+    (['Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a'], 'BbBb'),
+    (['abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba'], 'foo')
+]
+
+
 @pytest.mark.parametrize('s, result', PARAMS)
 def test_phone_presses(s, result):
     """Test phone presses."""
@@ -37,3 +43,10 @@ def test_sum_pairs(ints, s, result):
     """Test sum pairs."""
     from sum_pairs import sum_pairs
     assert sum_pairs(ints, s) == result
+
+
+@pytest.mark.parametrize('lst, result', PARAMS_UNIQ)
+def test_unique_string(lst, result):
+    """Test unique string."""
+    from kata import find_uniq
+    assert find_uniq(lst) == result
