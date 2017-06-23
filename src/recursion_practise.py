@@ -25,3 +25,10 @@ def sum_of_n(n):
     if n == 0:
         return 0
     return n + sum_of_n(n - 1)
+
+
+def fibonacci(n):
+    """Return the nth number of the fibonacci series."""
+    if n is 1 or n is 2:
+        return 1
+    return fibonacci(n - 1) + fibonacci(n - 2)
