@@ -30,6 +30,12 @@ PARAMS_UNIQ = [
     (['abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba'], 'foo')
 ]
 
+PARAMS_ALPHA = [
+    ("The sunset sets at twelve o' clock.",
+     "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"),
+    (" ", "")
+]
+
 
 @pytest.mark.parametrize('s, result', PARAMS)
 def test_phone_presses(s, result):
@@ -50,3 +56,10 @@ def test_unique_string(lst, result):
     """Test unique string."""
     from src.kata import find_uniq
     assert find_uniq(lst) == result
+
+
+@pytest.mark.parametrize('s, result', PARAMS_ALPHA)
+def test_alphabet_position(s, result):
+    """Test string alphabet position."""
+    from src.kata import alphabet_position
+    assert alphabet_position(s) == result
