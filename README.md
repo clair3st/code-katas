@@ -1,6 +1,18 @@
 # code-katas [![Build Status](https://travis-ci.org/clair3st/code-katas.svg?branch=master)](https://travis-ci.org/clair3st/code-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/code-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/code-katas?branch=master)
 Collection of Python katas completed during Codefellows 401.
 
+#### Replace With Alphabet Position
+Level 6
+
+- *Module:* (src/katas.py)
+
+- *Function:* `alphabet_position(text)`
+
+- *Tests:* (tests/test_katas.py)
+
+- *URL:* [Alphabet position](https://www.codewars.com/kata/replace-with-alphabet-position/python)
+
+
 #### Find the unique String
 Level 5
 
