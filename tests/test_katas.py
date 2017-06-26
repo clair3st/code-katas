@@ -63,3 +63,22 @@ def test_alphabet_position(s, result):
     """Test string alphabet position."""
     from src.kata import alphabet_position
     assert alphabet_position(s) == result
+
+
+def test_add():
+    """Test add function."""
+    from src.kata import Add
+    assert Add(1)(2)(3) == 6
+
+
+def test_add_one():
+    """Test add one number."""
+    from src.kata import Add
+    assert Add(1) == 1
+
+
+def test_add_stores_numbers():
+    """Test add stores numbers."""
+    from src.kata import Add
+    a = Add(1)(2)(3)
+    assert a == 6
