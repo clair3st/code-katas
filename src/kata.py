@@ -19,3 +19,14 @@ def alphabet_position(text):
     """
     return " ".join([str(ord(i) - 96) for i in text.lower()
                      if ord(i) > 96 and ord(i) < 123])
+
+
+class Add(int):
+    """Add numbers together when called in succession.
+
+    https://www.codewars.com/kata/a-chain-adding-function/python
+    """
+
+    def __call__(self, n):
+        """Trying to add numbers."""
+        return Add(self + n)
