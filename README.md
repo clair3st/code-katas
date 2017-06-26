@@ -1,6 +1,17 @@
 # code-katas [![Build Status](https://travis-ci.org/clair3st/code-katas.svg?branch=master)](https://travis-ci.org/clair3st/code-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/code-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/code-katas?branch=master)
 Collection of Python katas completed during Codefellows 401.
 
+#### A Chain adding function
+Level 5
+
+- *Module:* (src/katas.py)
+
+- *Function:* `Add(int)`
+
+- *Tests:* (tests/test_katas.py)
+
+- *URL:* [Chain adding](https://www.codewars.com/kata/a-chain-adding-function/python)
+
 #### Replace With Alphabet Position
 Level 6
 
