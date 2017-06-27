@@ -1,6 +1,29 @@
 # code-katas [![Build Status](https://travis-ci.org/clair3st/code-katas.svg?branch=master)](https://travis-ci.org/clair3st/code-katas) [![Coverage Status](https://coveralls.io/repos/github/clair3st/code-katas/badge.svg?branch=master)](https://coveralls.io/github/clair3st/code-katas?branch=master)
 Collection of Python katas completed during Codefellows 401.
 
+#### A Chain adding function
+Level 5
+
+- *Module:* (src/katas.py)
+
+- *Function:* `Add(int)`
+
+- *Tests:* (tests/test_katas.py)
+
+- *URL:* [Chain adding](https://www.codewars.com/kata/a-chain-adding-function/python)
+
+#### Replace With Alphabet Position
+Level 6
+
+- *Module:* (src/katas.py)
+
+- *Function:* `alphabet_position(text)`
+
+- *Tests:* (tests/test_katas.py)
+
+- *URL:* [Alphabet position](https://www.codewars.com/kata/replace-with-alphabet-position/python)
+
+
 #### Find the unique String
 Level 5
 
@@ -8,7 +31,7 @@ Level 5
 
 - *Function:* `find_uniq(arr)`
 
-- *Tests:* (src/test_katas.py)
+- *Tests:* (tests/test_katas.py)
 
 - *URL:* [Find Unique String](https://www.codewars.com/kata/find-the-unique-string/train/python)
 
@@ -24,7 +47,7 @@ def find_uniq(arr):
 Level5
 - *Module:* (src/sum_pairs.py)
 
-- *Tests:* (src/test_katas.py)
+- *Tests:* (tests/test_katas.py)
 
 - *URL:* [Sum of Pairs](https://www.codewars.com/kata/sum-of-pairs/python)
 
@@ -52,7 +75,7 @@ Level 6
 Level6
 - *Module:* (src/array_diff.py)
 
-- *Tests:* (src/test_array_diff.py)
+- *Tests:* (tests/test_array_diff.py)
 
 - *URL:* [Array.Diff](https://www.codewars.com/kata/array-dot-diff/python)
 

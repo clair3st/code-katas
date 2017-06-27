@@ -1,6 +1,6 @@
 """Find the distance between two cities."""
 import requests
-from weighted_graph import Graph
+from src.weighted_graph import Graph
 import sys
 import json
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":  # pragma: no cover
     if len(sys.argv) > 1 and sys.argv[1] == 'test':
         graph = make_airport_graph(
             parse_data_into_required_format(
-                get_data_from_json_file('cities_with_airports.json')
+                get_data_from_json_file('src/cities_with_airports.json')
             )
         )
     else:
